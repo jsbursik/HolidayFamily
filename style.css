@@ -31,6 +31,11 @@ ul {
   margin: 0 auto;
 }
 
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
 li {
   display: flex;
   align-items: center;
@@ -73,7 +78,7 @@ img {
 }
 
 .bg-blue {
-  color: white;
+  color: #fff;
   background-color: #0063a9;
 }
 
@@ -84,6 +89,24 @@ img {
 .wide-logo {
   min-width: 320px;
   width: 25vw;
+}
+
+.btn {
+  color: #ffffff;
+  font-weight: bold;
+  background-color: #333333;
+
+  padding: 1em;
+  margin: 0.5em 0;
+  border-radius: 1em;
+}
+
+.btn-green {
+  background-color: #74a729 !important;
+}
+
+.btn:hover {
+  filter: brightness(1.2);
 }
 
 /* Powertrain/Warranty copy section */
@@ -109,8 +132,8 @@ section h2 {
 /* Rewards Table Section */
 
 table {
-  margin: 1em auto 0 auto;
   text-align: left;
+  margin: 1em auto 0 auto;
   border-collapse: collapse;
 }
 
@@ -179,6 +202,22 @@ td:nth-child(3) {
   margin-right: auto;
 }
 
+/* App Info Section */
+
+#app-list > li {
+  gap: 1em;
+  text-align: left;
+  margin-bottom: 1em;
+}
+
+.app-btn {
+  margin: 0.5em 5em;
+}
+
+.app-preview {
+  max-width: 190px;
+}
+
 /* Mobile media query, 720px is a decent breakpoint */
 
 @media only screen and (max-width: 720px) {
@@ -213,5 +252,9 @@ td:nth-child(3) {
 
   .col-details {
     padding: 0.5em;
+  }
+
+  .m-hide {
+    display: none;
   }
 }
